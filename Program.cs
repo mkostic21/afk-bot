@@ -7,16 +7,20 @@ namespace afk_bot
         static void Main(string[] args)
         {
             ConsoleKey input;
+            Message.displaySplashScreen();
+
             do
             {
-                //TODO: UI default splashscreen message here:
                 switch (input = Console.ReadKey(true).Key)
                 {
                     case ConsoleKey.D1:
-                        //1st method here:
+                        ClickSetup.randomMode();
+                        break;
+                    case ConsoleKey.D2:
+                        ClickSetup.manualMode();
                         break;
                     case ConsoleKey.Escape:
-                        Console.WriteLine("Exiting.");
+                        Console.WriteLine("Exiting...");
                         break;
                     default:
                         //help message here?
