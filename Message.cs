@@ -6,6 +6,7 @@ namespace afk_bot
     {
         public static void displaySplashScreen()
         {
+            Console.Clear();
             Console.WriteLine("\t\t\t*** AFK BOT MENU ***");
             Console.WriteLine("\nPress [1] for random clicks\nPress [2] for manual click setup\nPress [ESC] to EXIT at any moment");
             Console.WriteLine("\n");
