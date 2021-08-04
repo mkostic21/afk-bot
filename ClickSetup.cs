@@ -14,8 +14,7 @@ namespace afk_bot
 
         public static void randomMode()
         {
-
-            Message.displayRandomModeUI();
+            Message.displayRandom();
             do
             {
                 while (!Console.KeyAvailable)
@@ -27,22 +26,6 @@ namespace afk_bot
                 }
             } while (!Console.ReadKey(true).Key.Equals(ConsoleKey.Escape)); //ESC is not pressed
 
-
-
-
-            //return to main menu:
-            Message.displaySplashScreen();
-        }
-        public static void manualMode()
-        {
-            Message.displayManualModeUI();
-            do
-            {
-                input = Console.ReadKey(true).Key;
-                //routine here:
-            } while (!input.Equals(ConsoleKey.Escape)); //ESC is not pressed
-
-            //return to main menu:
             Message.displaySplashScreen();
         }
 

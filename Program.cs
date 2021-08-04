@@ -16,9 +16,6 @@ namespace afk_bot
                     case ConsoleKey.D1:
                         ClickSetup.randomMode();
                         break;
-                    case ConsoleKey.D2:
-                        ClickSetup.manualMode();
-                        break;
                     case ConsoleKey.Escape:
                         Console.WriteLine("Exiting...");
                         break;

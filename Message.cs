@@ -8,22 +8,12 @@ namespace afk_bot
         {
             Console.Clear();
             Console.WriteLine("\t\t\t*** AFK BOT MENU ***");
-            Console.WriteLine("\nPress [1] for random clicks\nPress [2] for manual click setup\nPress [ESC] to EXIT at any moment");
+            Console.WriteLine("\nPress [1] to begin\nPress [ESC] to EXIT");
             Console.WriteLine("\n");
         }
-
-        public static void displayRandomModeUI()
-        {
+        public static void displayRandom() {
             Console.Clear();
-            Console.WriteLine("Press [ESC] to go back to previous menu");
-            //routine msg here:
-
-        }
-        public static void displayManualModeUI()
-        {
-            Console.Clear();
-            Console.WriteLine("Press [ESC] to go back to previous menu");
-            //routine msg here:
+            Console.WriteLine("Running...\nPress [ESC] to EXIT");
         }
     }
 }
