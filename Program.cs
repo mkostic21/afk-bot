@@ -4,11 +4,10 @@ namespace afk_bot
 {
     class Program
     {
+        public static ConsoleKey input;
         static void Main(string[] args)
         {
-            ConsoleKey input;
             Message.displaySplashScreen();
-
             do
             {
                 switch (input = Console.ReadKey(true).Key)
@@ -22,11 +21,8 @@ namespace afk_bot
                     case ConsoleKey.Escape:
                         Console.WriteLine("Exiting...");
                         break;
-                    default:
-                        //help message here?
-                        break;
                 }
-            } while (!input.Equals(ConsoleKey.Escape)); //ESC is not pressed
+            } while (!input.Equals(ConsoleKey.Escape)); //loops until [ESC] is pressed
         }
     }
 }
